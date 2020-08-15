@@ -10,10 +10,10 @@ public class MergeTwoSortedLists {
         int index2 = 0;
 
         while(index1 < list1.size() || index2 < list2.size()) {
-            if(index1 > list1.size() -1) {
+            if(index1 >= list1.size()) {
                 mergedList.add(list2.get(index2));
                 index2++;
-            } else if(index2 > list2.size() - 1) {
+            } else if(index2 >= list2.size()) {
                 mergedList.add(list1.get(index1));
                 index1++;
             } else {
@@ -30,13 +30,5 @@ public class MergeTwoSortedLists {
         }
 
         return mergedList;
-    }
-
-    private static int retrieveIntegerFromList(List<Integer> list, int index) {
-        try {
-            return list.get(index);
-        } catch(ArrayIndexOutOfBoundsException e) {
-            return -99;
-        }
     }
 }
