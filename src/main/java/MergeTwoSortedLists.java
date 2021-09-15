@@ -4,7 +4,7 @@ import java.util.List;
 public class MergeTwoSortedLists {
 
     public static List<Integer> execute(List<Integer>list1, List<Integer> list2) {
-        ArrayList<Integer>mergedList = new ArrayList<Integer>();
+        ArrayList<Integer>mergedList = new ArrayList<>();
 
         int index1 = 0;
         int index2 = 0;
